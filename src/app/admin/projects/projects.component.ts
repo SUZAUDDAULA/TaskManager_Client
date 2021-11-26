@@ -25,6 +25,7 @@ export class ProjectsComponent implements OnInit {
     );
   }
 
+
   onSaveClick(): void{
     this.projectService.insertProject(this.newProject).subscribe((response) => {
       const p: Project = new Project();
